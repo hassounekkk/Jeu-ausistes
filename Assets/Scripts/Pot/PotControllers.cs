@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PotControllers : GGame
 {
-    int level = 4;
+    
     public List<GameObject> players = new List<GameObject>();
     float Timer = 1;
     List<Collider2D> collider2Ds = new List<Collider2D>();
     List<Color> colors = new List<Color>();
     AHH A1;
     public Color[] clr;
-    Score score;
+    Score sscore;
     List<List<GameObject>> ayay = new List<List<GameObject>>();
     public GameObject[] kisan;
     List<Color> colors2 = new List<Color>();
@@ -26,6 +26,10 @@ public class PotControllers : GGame
     public GameObject pl;
     int Scoor;
     public GameObject[] stars;
+    private void Awake()
+    {
+        level = 4;
+    }
     void DistroyIt()
     {
         foreach (GameObject pl in players) Destroy(pl);
@@ -43,8 +47,8 @@ public class PotControllers : GGame
     {
         if(level==4)
         {
-            score = FindObjectOfType<Score>();
-            score.initialiserStars(4);
+            sscore = FindObjectOfType<Score>();
+            sscore.initialiserStars(4);
         }
 
         DistroyIt();
@@ -195,7 +199,7 @@ public class PotControllers : GGame
         if (Timer <= 0)
         {
             Timer = 1;
-            score.AddStar();
+            sscore.AddStar();
             if (level < 12)
             {
                 level += 3;
@@ -208,16 +212,10 @@ public class PotControllers : GGame
                 finish = true;
                 
                 add_Score_Db = FindObjectOfType<Add_Score_db>();
-                
-                
-                
-                if (timer_to_finish < 90) Scoor = 3;
-                else if (timer_to_finish > 90 && timer_to_finish > 120) Scoor = 2;
-                else Scoor = 1;
 
-                
-                for (int k = 0; k < wiw.Length; k++) wiw[k].SetActive(true);
-                for (int k = 0; k < Scoor; k++) stars[k].SetActive(true);
+
+
+                finish_game();
 
 
 

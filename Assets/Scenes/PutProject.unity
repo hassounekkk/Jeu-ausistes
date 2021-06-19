@@ -1576,15 +1576,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  game_Nbr: 0
+  game_Nbr: 7
   level: 0
   add_Score_Db: {fileID: 0}
   timer_to_finish: 0
   finish: 0
   pause: 0
+  score: 0
   PauseScean: {fileID: 28879840}
+  finisheScean: {fileID: 0}
+  njom_sofar: []
+  score_levels: {fileID: 0}
   max_Timer: 0
   min_Timer: 0
+  something_To_Hide: []
   Object:
   - {fileID: 330929247}
   - {fileID: 1326402962}

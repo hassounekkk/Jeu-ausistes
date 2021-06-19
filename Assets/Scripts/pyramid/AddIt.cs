@@ -17,20 +17,20 @@ public class AddIt : GGame
     public  List<GameObject> CurItems = new List<GameObject>();
     List<AAAAA> a1 = new List<AAAAA>();
     bool evrythingLocked=false;
-    Score score;
+    Score sscore;
     bool restart = false;
     float TimerTorestart=1;
     public GameObject MonikoVrai;
     public GameObject Monikofalse;
     int njom;
-    public GameObject[] njom_sofar;
+    public GameObject[] njom_sofarr;
     void Start()
     {
         
         if (level < 3)
         {
-            score = FindObjectOfType<Score>();
-            score.initialiserStars(3);
+            sscore = FindObjectOfType<Score>();
+            sscore.initialiserStars(3);
             for (int i = 0; i < items.Length; i++) items[i].SetActive(false);
             CurItems.Clear();
             placeInitiale.Clear();
@@ -163,7 +163,7 @@ public class AddIt : GGame
                 Restart();
                 level++;
                 Start();
-                score.AddStar();
+                sscore.AddStar();
                 MonikoVrai.SetActive(false);
             }
             else finish = true;

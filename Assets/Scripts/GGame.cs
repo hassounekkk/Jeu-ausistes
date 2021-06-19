@@ -24,9 +24,11 @@ public class GGame : MonoBehaviour
     {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
-    public void Restart()
+    public void Restart_it()
     {
+        
         SceneManager.LoadScene(game_Nbr, LoadSceneMode.Single);
+        
     }
     public void Pause()
     {
