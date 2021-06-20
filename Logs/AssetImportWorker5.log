@@ -677,3 +677,9 @@ System memory in use after: 62.2 MB.
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3921.
 Total: 4.961100 ms (FindLiveObjects: 0.297000 ms CreateObjectMapping: 0.191400 ms MarkObjects: 4.398900 ms  DeleteObjects: 0.072000 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 2285.880846 seconds.
+  path: Assets/Scenes/Pot.unity
+  artifactKey: Guid(cf143ec8140c39042b5934d78ccc23aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pot.unity using Guid(cf143ec8140c39042b5934d78ccc23aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f53292c5b0b45a256706b51684cc19') in 0.166744 seconds 
